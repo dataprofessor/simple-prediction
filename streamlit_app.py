@@ -41,7 +41,7 @@ rf.fit(X_train, y_train)
 
 # Apply model to make predictions
 input_df = pd.DataFrame([sepal_length, sepal_width, petal_length, petal_width])
-y_pred = rf.predict()
+#y_pred = rf.predict()
 
 # Print prediction results
 st.write(input_df)
