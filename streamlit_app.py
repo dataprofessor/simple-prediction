@@ -11,12 +11,12 @@ from sklearn.ensemble import RandomForestClassifier
 # Page configuration
 st.set_page_config(
      page_title='Simple Prediction App',
-     page_icon='🎈',
+     page_icon='🌷',
      layout='wide',
      initial_sidebar_state='expanded')
 
 # Title of the app
-st.title('🎈 Simple Prediction App')
+st.title('🌷 Simple Prediction App')
 
 # Load dataset
 df = pd.read_csv('https://raw.githubusercontent.com/dataprofessor/data/master/iris.csv')
