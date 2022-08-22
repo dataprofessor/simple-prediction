@@ -48,5 +48,5 @@ input_feature = pd.DataFrame([[sepal_length, sepal_width, petal_length, petal_wi
                             columns=['sepal_length', 'sepal_width', 'petal_length', 'petal_width'])
 st.write(input_feature)
 
-st.subheader('Predicted class')
-st.metric('Prediction', y_pred[0], '')
+st.subheader('Output')
+st.metric('Predicted class', y_pred[0], '')
