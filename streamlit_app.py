@@ -43,5 +43,6 @@ rf.fit(X_train, y_train)
 #y_pred = rf.predict([sepal_length, sepal_width, petal_length, petal_width])
 
 # Print prediction results
-st.write(sepal_length)
+#st.write(sepal_length)
 #st.write(y_pred)
+st.write(df['Sepal.Length'].min())
