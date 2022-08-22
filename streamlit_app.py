@@ -44,5 +44,5 @@ y_pred = rf.predict([[sepal_length, sepal_width, petal_length, petal_width]])
 
 # Print prediction results
 input_feature = pd.DataFrame([[sepal_length, sepal_width, petal_length, petal_width]])
-st.write()
+st.write(input_feature)
 st.write(y_pred)
