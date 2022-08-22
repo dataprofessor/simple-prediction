@@ -23,10 +23,10 @@ df = pd.read_csv('https://raw.githubusercontent.com/dataprofessor/data/master/ir
 
 # Input widgets
 st.sidebar.subheader('Input features')
-ssepal_length = st.sidebar.slider('Sepal length', df['Sepal.Length'].min(), df['Sepal.Length'].max(), df['Sepal.Length'].median())
-sepal_width = st.sidebar.slider('Sepal width', df['Sepal.Width'].min(), df['Sepal.Width'].max(), df['Sepal.Width'].median())
-petal_length = st.sidebar.slider('Petal length', df['Petal.Length'].min(), df['Petal.Length'].max(), df['Petal.Length'].median())
-petal_width = st.sidebar.slider('Petal width', df['Petal.Width'].min(), df['Petal.Width'].max(), df['Petal.Width'].median())
+sepal_length = st.sidebar.slider('Sepal length', df['Sepal.Length'].min(), df['Sepal.Length'].max(), df['Sepal.Length'].median())
+#sepal_width = st.sidebar.slider('Sepal width', df['Sepal.Width'].min(), df['Sepal.Width'].max(), df['Sepal.Width'].median())
+#petal_length = st.sidebar.slider('Petal length', df['Petal.Length'].min(), df['Petal.Length'].max(), df['Petal.Length'].median())
+#petal_width = st.sidebar.slider('Petal width', df['Petal.Width'].min(), df['Petal.Width'].max(), df['Petal.Width'].median())
 
 # Separate to X and y
 X = df.drop('Species', axis=1)
@@ -43,5 +43,5 @@ rf.fit(X_train, y_train)
 #y_pred = rf.predict([sepal_length, sepal_width, petal_length, petal_width])
 
 # Print prediction results
-st.write(st_sepal_length)
+st.write(sepal_length)
 st.write(y_pred)
