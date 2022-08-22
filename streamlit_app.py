@@ -42,11 +42,17 @@ rf.fit(X_train, y_train)
 # Apply model to make predictions
 y_pred = rf.predict([[sepal_length, sepal_width, petal_length, petal_width]])
 
-# Print prediction results
+# Print EDA
+st.subheader('Brief EDA')
+groupby_species_mean = df.groupby('Species').mean()
+st.write(groupby_species_mean)
+
+# Print input features
 st.subheader('Input features')
 input_feature = pd.DataFrame([[sepal_length, sepal_width, petal_length, petal_width]],
                             columns=['sepal_length', 'sepal_width', 'petal_length', 'petal_width'])
 st.write(input_feature)
 
+# Print prediction output
 st.subheader('Output')
 st.metric('Predicted class', y_pred[0], '')
