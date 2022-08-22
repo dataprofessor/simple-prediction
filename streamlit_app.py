@@ -45,4 +45,8 @@ rf.fit(X_train, y_train)
 
 # Print prediction results
 st.write(sepal_length)
+st.write(df['Sepal.Length'].min())
+st.write(df['Sepal.Length'].max())
+st.write(df['Sepal.Length'].median())
+
 #st.write(y_pred)
