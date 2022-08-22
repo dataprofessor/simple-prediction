@@ -49,4 +49,4 @@ input_feature = pd.DataFrame([[sepal_length, sepal_width, petal_length, petal_wi
 st.write(input_feature)
 
 st.subheader('Predicted class')
-st.metric('Prediction', y_pred, '')
+st.metric('Prediction', y_pred.tolist(), '')
