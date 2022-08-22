@@ -40,8 +40,7 @@ rf = RandomForestClassifier(max_depth=2, max_features=4, n_estimators=200, rando
 rf.fit(X_train, y_train)
 
 # Apply model to make predictions
-input_feature = pd.DataFrame([sepal_length, sepal_width, petal_length, petal_width], columns=['sepal_length', 'sepal_width', 'petal_length', 'petal_width'])
-#y_pred = rf.predict()
+y_pred = rf.predict([[sepal_length, sepal_width, petal_length, petal_width]])
 
 # Print prediction results
-st.write(input_feature)
+st.write(y_pred)
