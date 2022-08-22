@@ -45,4 +45,4 @@ rf.fit(X_train, y_train)
 
 # Print prediction results
 
-st.write(df.info())
+st.write(df.describe())
