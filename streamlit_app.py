@@ -21,6 +21,10 @@ st.title('🎈 Simple Prediction App')
 # Load dataset
 df = pd.read_csv('https://raw.githubusercontent.com/dataprofessor/data/master/iris.csv')
 
+# Input widgets
+st.sidebar.subheader('Input features')
+st_sepal_length = st.sidebar.slider('Sepal length', df['Sepal.Length'].min(), df['Sepal.Length'].max(), df['Sepal.Length'].mean())
+
 # Separate to X and y
 X = df.drop('Species', axis=1)
 y = df.Species
@@ -36,4 +40,5 @@ rf.fit(X_train, y_train)
 y_pred = rf.predict(X_train)
 
 # Print prediction results
+st.write(st_sepal_length)
 st.write(y_pred)
