@@ -33,7 +33,7 @@ X = df.drop('Species', axis=1)
 y = df.Species
 
 # Data splitting
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=st_test_size, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # Model building
 rf = RandomForestClassifier(max_depth=2, max_features=st_max_features, n_estimators=st_n_estimators, random_state=42)
