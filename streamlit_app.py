@@ -44,9 +44,5 @@ rf.fit(X_train, y_train)
 #y_pred = rf.predict([sepal_length, sepal_width, petal_length, petal_width])
 
 # Print prediction results
-st.write(sepal_length)
-st.write(df['Sepal.Length'].min())
-st.write(df['Sepal.Length'].max())
-st.write(df['Sepal.Length'].median())
 
 st.write(df.info())
