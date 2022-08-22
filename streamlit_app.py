@@ -44,4 +44,4 @@ rf.fit(X_train, y_train)
 
 # Print prediction results
 st.write(sepal_length)
-st.write(y_pred)
+#st.write(y_pred)
