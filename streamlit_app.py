@@ -43,6 +43,10 @@ rf.fit(X_train, y_train)
 y_pred = rf.predict([[sepal_length, sepal_width, petal_length, petal_width]])
 
 # Print prediction results
-input_feature = pd.DataFrame([[sepal_length, sepal_width, petal_length, petal_width]])
+st.subheader('Input features')
+input_feature = pd.DataFrame([[sepal_length, sepal_width, petal_length, petal_width]],
+                            columns=['sepal_length', 'sepal_width', 'petal_length', 'petal_width'])
 st.write(input_feature)
+
+st.subheader('Predicted class')
 st.write(y_pred)
