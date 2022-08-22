@@ -49,4 +49,4 @@ st.write(df['Sepal.Length'].min())
 st.write(df['Sepal.Length'].max())
 st.write(df['Sepal.Length'].median())
 
-#st.write(y_pred)
+st.write(df.info())
