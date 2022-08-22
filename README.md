@@ -1,4 +1,4 @@
-# Name of Streamlit App
+# Simple Prediction App
 
 Description of the app ...
 
