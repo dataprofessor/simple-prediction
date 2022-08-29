@@ -1,18 +1,10 @@
 # Simple Prediction App
 
-Description of the app ...
+A simple machine learning app that takes in input features and applies the trained model to make class prediction.
+
+The Iris dataset is used in this example app.
 
 ## Demo App
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/st-app/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://simple-prediction.streamlitapp.com/)
 
-## Section Heading
-
-This is filler text, please replace this with text for this section.
-
-## Further Reading
-
-This is filler text, please replace this with a explanatory text about further relevant resources for this repo
-- Resource 1
-- Resource 2
-- Resource 3
