@@ -49,7 +49,7 @@ groupby_species_mean = df.groupby('Species').mean()
 st.write(groupby_species_mean)
 st.write(groupby_species_mean.index)
 st.write(groupby_species_mean['Sepal.Length'])
-st.bar_chart(groupby_species_mean)
+st.line_chart(groupby_species_mean)
 
 # Print input features
 st.subheader('Input features')
