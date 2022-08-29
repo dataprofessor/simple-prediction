@@ -47,9 +47,7 @@ st.subheader('Brief EDA')
 st.write('The data is grouped by the class and the variable mean is computed for each class.')
 groupby_species_mean = df.groupby('Species').mean()
 st.write(groupby_species_mean)
-st.write(groupby_species_mean.index)
-st.write(groupby_species_mean['Sepal.Length'])
-st.line_chart(groupby_species_mean)
+st.line_chart(groupby_species_mean.T)
 
 # Print input features
 st.subheader('Input features')
